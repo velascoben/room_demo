@@ -44,6 +44,9 @@ class MainActivity : AppCompatActivity() {
             save(employee)
             adapter.employeeModel.add(employee)
             adapter.notifyDataSetChanged()
+            binding.etName.setText("")
+            binding.etSalary.setText("")
+            binding.etName.requestFocus()
             displayMessage("New Employee Added")
         }
 
